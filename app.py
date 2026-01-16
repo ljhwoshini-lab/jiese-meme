@@ -9,7 +9,7 @@ import os
 def create_certificate(image_file, name):
     # --- 字体设置 (最关键的一步) ---
     # 必须确保文件夹里有 simhei.ttf，否则云端会显示方框乱码
-    font_path = "E:\pppt\SimHei.ttf"
+    font_path = "simhei.ttf"
 
     if not os.path.exists(font_path):
         st.error("❌ 错误：未找到字体文件 simhei.ttf，请确保该文件已上传！")
@@ -132,3 +132,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
